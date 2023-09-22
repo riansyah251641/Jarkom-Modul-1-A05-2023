@@ -7,7 +7,7 @@
 | Layyinatul Fuadah | 5025211207 |
 
 ## No 1
-1.	User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file
+User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file
 a.	Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 Answer: 258040667
 b.	Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
@@ -17,8 +17,10 @@ Answer: 1044861039
 
 Melakukan filtering dengan menuliskan perintah FTP, bertujuan agar memfilter protokol FTP saja sesuai soal yang diminta. 
 pada packet 147 kita dapat melihat sequence(raw) = 258040667 dan acknowledge(raw)  = 1044861039 aktivitas dengan melihat membuka FTP 
+
 c.	Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 Answer: 1044861039
+
 d.	Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 Answer: 258040696
 
