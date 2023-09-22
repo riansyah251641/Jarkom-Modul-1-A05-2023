@@ -37,7 +37,7 @@ pada packet 149 kita dapat melihat sequence(raw) = 1044861039 dan acknowledge(ra
 ## No 2
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
-Answer = gunucorn
+Answer = gunicorn
 
 ![alt text](https://github.com/ayyfuadh/Jarkom-Modul-1-A05-2023/blob/main/img/soal%20no%202.png?raw=true)
 
@@ -45,6 +45,13 @@ Pada soal no 2 kita di suruh umtuk mencari web server yang digunakan portal prak
 Selanjutnya Memilih nilai ip 10.21.78.111. kemudian kita buka bagian hypertext dan terdapat detail server bernamakan gunicorn.
 
 ## NO 3
+### a.Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+Answer: 21
+
+### b. Protokol layer transport apa yang digunakan?
+Answer: UDP
+
+### Bukti
 
 ## No 4
 
