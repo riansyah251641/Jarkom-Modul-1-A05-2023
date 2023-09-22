@@ -45,15 +45,17 @@ Pada soal no 2 kita di suruh umtuk mencari web server yang digunakan portal prak
 Selanjutnya Memilih nilai ip 10.21.78.111. kemudian kita buka bagian hypertext dan terdapat detail server bernamakan gunicorn.
 
 ## NO 3
-### a.Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+a.Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 Answer: 21
 
-### b. Protokol layer transport apa yang digunakan?
+b. Protokol layer transport apa yang digunakan?
 Answer: UDP
 
 ### Bukti
 
 ## No 4
+Berapa nilai checksum yang didapat dari header pada paket nomor 130?
+Answer: 0x18e5
 
 ## No 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah elshe untuk menganalisis file packet capture tersebut. (Revisi)
@@ -74,27 +76,30 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil 
 pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut. (Revisi)
 
-Dengan melakukan decrypt dengan metode “a1 e5 u21” maka diketahui bahwa source address 104.18.14.101 dapat dipecah menajdi 10 4 18 14 10 1, maka hasil decrypt adalah JDRNJA
+Answer = Dengan melakukan decrypt dengan metode “a1 e5 u21” maka diketahui bahwa source address 104.18.14.101 dapat dipecah menajdi 10 4 18 14 10 1, maka hasil decrypt adalah JDRNJA
 
 ## No 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 
-Answear = 6
+Answer = 6
 
 ![alt text](https://github.com/ayyfuadh/Jarkom-Modul-1-A05-2023/blob/main/img/jarkom%20soal%207.png?raw=true)
 
 Dengan menggunakan query ip.dst == 184.87.193.88, kita bisa mendapatkan jumlah packet nya  6.
 
 ## No 8
+Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+
+Answer =  tcp.dstport == 80 || udp.dstport == 80
+
+Bukti
 
 ## No 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34! (Revisi)
 
-Jawabannya adalah 
-
-ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
+Answer = ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 
 ## No 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
-pada paket dengan telnet, ketika kita follow didapatkan hasil sebagai berikut, username adalah dhafin dan password nya adalah kesayangannyak0k0
+Answer = pada paket dengan telnet, ketika kita follow didapatkan hasil sebagai berikut, username adalah dhafin dan password nya adalah kesayangannyak0k0
