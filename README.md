@@ -37,7 +37,7 @@ pada packet 149 kita dapat melihat sequence(raw) = 1044861039 dan acknowledge(ra
 ## No 2
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
-Answer = gunucorn
+Answer = gunicorn
 
 ![alt text](https://github.com/ayyfuadh/Jarkom-Modul-1-A05-2023/blob/main/img/soal%20no%202.png?raw=true)
 
