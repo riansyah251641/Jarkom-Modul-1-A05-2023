@@ -46,9 +46,11 @@ Selanjutnya Memilih nilai ip 10.21.78.111. kemudian kita buka bagian hypertext d
 
 ## NO 3
 a.Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+
 Answer: 21
 
 b. Protokol layer transport apa yang digunakan?
+
 Answer: UDP
 
 Bukti
@@ -59,6 +61,7 @@ pada nomor 3 dilakukan poencarian dengan menggunakan host untuk mengetahui ip ya
 
 ## No 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
+
 Answer: 0x18e5
 
 Bukti
@@ -69,23 +72,33 @@ dilakukan pemcarian data pada nomor 130 kemudian ditemupan checksum pada bagian 
 ## No 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah elshe untuk menganalisis file packet capture tersebut. (Revisi)
 
-a. berapa packet yang berhasil dicapture dari file? 60**
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor5_1.png)
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor5_2.png)
+dilakukan filter dengan kata kunci pass lalu ditemukan suatu password dengan isi cHVuamFiQDEyMw== kemudian di decrypt dan didapatkan password berupa 5implePas5word. lalu dibukak files yang dikunci dan diperoleh nc 10.21.78.111 11111.
 
-Dengan melakukan filter “pass” kita mendapatkan sebuah packet. Kemudian packet tersebut di follow dan pada bagian bawah terdapat pesan di atas. kemudian kita decrypt dan didapatkan password berupa 5implePas5word
-Kita dapat melihat nomor paket terakhir yaitu 60
 
+a. berapa packet yang berhasil dicapture dari file?
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor5_3.png)
+jumlah files pada file no 5 diperoleh banyak paket sebesar 60
+
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor5_4.png)
 b. port berapa server yang digunakan untuk service smtp?
 
-c. berapa public ip? ketika ditrace/difollow, ip 74.53.140.153 smtp dan mengirim pesan/mail**
+dilakukan filter dengan smtp lalu ditemukan port yang digunakan yaitu 25
 
-kita bisa melihat source port nya adalah 25 dan source address bernilai 74.53.140.153
+c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+
+alamat IP dalam rentang 10.x.x.x, 172.16.x.x - 172.31.x.x, atau 192.168.x.x, maka itu adalah alamat IP pribadi, bukan alamat IP publik.
 
 ## No 6
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal 
 yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil 
 pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut. (Revisi)
 
-Answer = Dengan melakukan decrypt dengan metode “a1 e5 u21” maka diketahui bahwa source address 104.18.14.101 dapat dipecah menajdi 10 4 18 14 10 1, maka hasil decrypt adalah JDRNJA
+Answer = 
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor6.png)
+pada soal didapat kode "a1 e5 u21" kemudian dilakukan decrypt dan diperoleh ip source nya yaitu 104.18.14.101 kemudian dipecah kembali agar dapat di decrypt menjadi 10 4 18 14 10 1. sehingga menghasilkan nilai JDNJA
+
 
 ## No 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?
@@ -113,12 +126,13 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 Answer = ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 
 Bukti
-![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor9.png)
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor9_1.png)
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor9_2.png)
 
 dengan menggunakan perintah ip.src == 10.51.40.1 && ip.dst != 10.39.55.34, maka akan ditemukan packet dengan ip source 10.51.40.1 dengan ip destinationnya tidak pada 10.39.55.34
 
 ## No 10
-Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
+Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet (revisi)
 
 Answer = pada paket dengan telnet, ketika kita follow didapatkan hasil sebagai berikut, username adalah dhafin dan password nya adalah kesayangannyak0k0
 
