@@ -1,6 +1,6 @@
 # Jarkom-Modul-1-A05-2023
 
-# Kelompok A19:
+# Kelompok A05:
 | Nama | NRP |
 | ---------------------- | ---------- |
 | Muhammad Ferbiansyah | 5025211164 |
@@ -54,6 +54,8 @@ Answer: UDP
 Bukti
 ![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor3.png)
 
+pada nomor 3 dilakukan poencarian dengan menggunakan host untuk mengetahui ip yang menggunakan source maupun deestnya adalah ip yang dicari kemudian digunakan pencaharian port dengan udp karena tidak adanya port yang bertipe tcp
+
 
 ## No 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
@@ -61,6 +63,8 @@ Answer: 0x18e5
 
 Bukti
 ![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor4.png)
+
+dilakukan pemcarian data pada nomor 130 kemudian ditemupan checksum pada bagian User Datagram Protokol
 
 ## No 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah elshe untuk menganalisis file packet capture tersebut. (Revisi)
@@ -95,10 +99,13 @@ Dengan menggunakan query ip.dst == 184.87.193.88, kita bisa mendapatkan jumlah p
 ## No 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
+
 Answer =  tcp.dstport == 80 || udp.dstport == 80
 
 Bukti
 ![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor8.png)
+
+dengan menggunakan perintah tcp.dstport == 80 || udp.dstport == 80 yang berarti untuk semua port yang bertipe tcp ataupun udp yang bernilai 80.
 
 ## No 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34! (Revisi)
@@ -108,8 +115,7 @@ Answer = ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 Bukti
 ![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor9.png)
 
-Bukti
-![alt text]()
+dengan menggunakan perintah ip.src == 10.51.40.1 && ip.dst != 10.39.55.34, maka akan ditemukan packet dengan ip source 10.51.40.1 dengan ip destinationnya tidak pada 10.39.55.34
 
 ## No 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
@@ -118,3 +124,6 @@ Answer = pada paket dengan telnet, ketika kita follow didapatkan hasil sebagai b
 
 Bukti
 ![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor10.png)
+
+dilakukan pencaharian satu persatu sesuai dengan format yang diberikan yaitu username|password dan ditemukan pada data nomor 81 dengan jawaban dhafin:kesayangannyak0k0
+
