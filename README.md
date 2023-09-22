@@ -51,6 +51,8 @@ Answer: 21
 b. Protokol layer transport apa yang digunakan?
 Answer: UDP
 
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor3.png)
+
 ### Bukti
 
 ## No 4
