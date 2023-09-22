@@ -6,7 +6,7 @@
 | Muhammad Ferbiansyah | 5025211164 |
 | Layyinatul Fuadah | 5025211207 |
 
-## No 1
+## No 1
 1.	User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file
 a.	Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 Answer: 258040667
