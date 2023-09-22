@@ -51,13 +51,16 @@ Answer: 21
 b. Protokol layer transport apa yang digunakan?
 Answer: UDP
 
+Bukti
 ![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor3.png)
 
-### Bukti
 
 ## No 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 Answer: 0x18e5
+
+Bukti
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor4.png)
 
 ## No 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah elshe untuk menganalisis file packet capture tersebut. (Revisi)
@@ -95,13 +98,23 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 Answer =  tcp.dstport == 80 || udp.dstport == 80
 
 Bukti
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor8.png)
 
 ## No 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34! (Revisi)
 
 Answer = ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 
+Bukti
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor9.png)
+
+Bukti
+![alt text]()
+
 ## No 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
 Answer = pada paket dengan telnet, ketika kita follow didapatkan hasil sebagai berikut, username adalah dhafin dan password nya adalah kesayangannyak0k0
+
+Bukti
+![alt text](https://github.com/riansyah251641/Jarkom-Modul-1-A05-2023/blob/main/img/nomor10.png)
