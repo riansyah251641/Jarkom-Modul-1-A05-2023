@@ -8,6 +8,7 @@
 
 ## No 1
 User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file
+
 a.	Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 
 Answer: 258040667
